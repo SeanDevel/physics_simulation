@@ -1,0 +1,21 @@
+directory structure
+
+```
+├── 0.2-chipmunk_demo
+│   ├── command.txt
+│   ├── run.exe
+│   └── main.c
+└── chipmunk
+    ├── bin
+    │   ├── libchipmunk.dll
+    │   └── run.exe
+    ├── include
+    │   └── chipmunk
+    │       ├── chipmunk.h
+    │       └── ...
+    └── lib
+        └── libchipmunk.a
+
+```
+
+gcc .\main.c -o run.exe -I../chipmunk/include  -L../chipmunk/bin -lchipmunk
